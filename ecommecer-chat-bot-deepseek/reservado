@@ -1,0 +1,121 @@
+Configuration
+Frontend (.env)
+env
+Copy
+VITE_WS_URL=ws://localhost:3001
+VITE_API_URL=http://localhost:3000/api
+Backend (.env)
+env
+Copy
+DEEPSEEK_API_KEY=your_api_key
+REDIS_URL=redis://localhost:6379
+DATABASE_URL=postgres://user:pass@localhost:5432/chatdb
+PORT=3001
+Running with Docker
+bash
+Copy
+docker-compose up --build
+🛠 Development
+Frontend
+bash
+Copy
+cd frontend
+npm run dev  # Starts Vite dev server
+Backend
+bash
+Copy
+cd backend
+npm run dev  # Starts Node.js in watch mode
+Common Commands
+bash
+Copy
+npm run build    # Build production assets
+npm run test     # Run tests with coverage
+npm run lint     # Lint codebase
+npm run format   # Format code with Prettier
+🌐 Deployment
+Production Build
+bash
+Copy
+docker-compose -f docker-compose.prod.yml up --build
+Kubernetes
+bash
+Copy
+kubectl apply -f deployment/k8s/
+Monitoring Stack
+bash
+Copy
+docker-compose -f deployment/monitoring/docker-compose.yml up
+🧰 Tech Stack
+Frontend
+Framework: React 18 + TypeScript
+
+State Management: Zustand
+
+Styling: Tailwind CSS
+
+Real-Time: Socket.IO Client
+
+Build: Vite
+
+Backend
+Runtime: Node.js 18
+
+Framework: Express + Socket.IO
+
+AI Integration: DeepSeek API
+
+Database: PostgreSQL + Redis
+
+ORM: Knex.js
+
+Monitoring: OpenTelemetry
+
+Infrastructure
+Containerization: Docker
+
+Orchestration: Kubernetes
+
+Monitoring: Prometheus + Grafana
+
+CI/CD: GitHub Actions
+
+🤝 Contributing
+Fork the repository
+
+Create your feature branch (git checkout -b feature/amazing-feature)
+
+Commit your changes (git commit -m 'Add some amazing feature')
+
+Push to the branch (git push origin feature/amazing-feature)
+
+Open a Pull Request
+
+Please read CONTRIBUTING.md for details on our code of conduct.
+
+📄 License
+This project is licensed under the MIT License - see the LICENSE.md file for details.
+
+🙏 Acknowledgments
+DeepSeek team for the AI capabilities
+
+Open source community for amazing tools
+
+Customers for valuable feedback
+
+Copy
+
+This README includes:
+
+1. **Project Metadata**: Badges for quick status checks
+2. **Visual Preview**: Screenshot section
+3. **Feature Highlights**: Key capabilities at a glance
+4. **Installation Guide**: Step-by-step setup
+5. **Configuration**: Environment variables explained
+6. **Development Workflow**: Common commands
+7. **Deployment Options**: Docker/Kubernetes instructions
+8. **Tech Stack**: Detailed technology breakdown
+9. **Contribution Guide**: Process for collaborators
+10. **License Info**: Legal documentation
+
+Customize the screenshots, badges, and acknowledgments sections with your actual project details! 😊

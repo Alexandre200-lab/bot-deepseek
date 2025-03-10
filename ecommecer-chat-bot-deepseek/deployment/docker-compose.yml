@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  frontend:
+    build: ./frontend
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+
+  backend:
+    build: ./backend
+    ports:
+      - "3001:3001"
+    environment:
+      - DEEPSEEK_API_KEY
+      - REDIS_URL
+
+  redis:
+    image: redis:alpine
+    ports:
+      - "6379:6379"

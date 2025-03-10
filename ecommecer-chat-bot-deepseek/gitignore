@@ -1,0 +1,101 @@
+# Diretórios gerais a ignorar
+node_modules/
+dist/
+build/
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+.DS_Store
+.idea/
+.vscode/
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+coverage/
+*.pid
+*.seed
+*.pid.lock
+
+# Frontend específico
+frontend/.sass-cache/
+frontend/__sapper__/
+frontend/static/
+frontend/package-lock.json
+frontend/yarn.lock
+frontend/pnpm-lock.yaml
+frontend/.cache/
+frontend/.vite/
+frontend/tsconfig.tsbuildinfo
+
+# Backend específico
+backend/.nyc_output/
+backend/.env
+backend/dist/
+backend/package-lock.json
+backend/yarn.lock
+backend/pnpm-lock.yaml
+backend/*.sqlite
+backend/*.dump
+
+# Deployment
+deployment/.terraform/
+deployment/*.tfstate
+deployment/*.tfstate.backup
+deployment/.terraform.lock.hcl
+deployment/terraform.tfvars
+deployment/.dockerignore
+docker-compose.override.yml
+**/.docker/
+**/docker-compose*.yml
+**/kubeconfig
+**/secrets/
+**/charts/
+**/tmp/
+
+# Sistema operacional/Editor
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.swp
+*.swo
+*~
+~$*
+
+# Testes
+**/junit.xml
+**/test-results/
+**/cypress/screenshots/
+**/cypress/videos/
+**/.jest/
+**/jest.config.js
+**/playwright-report/
+**/test-results/
+
+# TypeScript
+*.tsbuildinfo
+
+# Husky
+.husky/_/
+
+# Cache/Artefatos de ferramentas
+.eslintcache
+.stylelintcache
+.prettiercache
+.parcel-cache/
+.cache/
+.yarn/cache/
+.yarn/unplugged/
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
+
+# Banco de dados/Redis
+*.rdb
+*.aof
+dump.rdb
