@@ -52,8 +52,8 @@ A intelligent chat interface for e-commerce platforms powered by DeepSeek AI, fe
 ### Installation
 ```bash
 # Clone repository
-git clone https://github.com/yourusername/ecommerce-chat.git
-cd ecommerce-chat
+git clone git@github.com:Alexandre200-lab/bot-deepseek.git
+cd bot-deepseek
 
 # Install dependencies
 cd frontend && npm install
